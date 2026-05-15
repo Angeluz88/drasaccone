@@ -1,13 +1,12 @@
 ```
 # Dependencies
 node_modules/
-.pnpm-store/
 
 # Build outputs
 dist/
 build/
-.next/
-out/
+coverage/
+htmlcov/
 
 # Logs
 *.log
@@ -17,41 +16,41 @@ out/
 .env.local
 *.env.*
 
-# IDE files
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# OS generated files
+# OS
 .DS_Store
 Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
-
-# Compiled files
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
-
-# Compressed files
+# Compressed
 *.zip
 *.gz
 *.tar
@@ -70,8 +69,4 @@ Thumbs.db
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
