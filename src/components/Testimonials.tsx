@@ -8,21 +8,15 @@ interface Testimonial {
 const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
-      name: "Robert Johnson",
-      role: "Business Owner",
-      content: "The team at LawEx provided exceptional legal guidance for my business. Their expertise in corporate law saved us from a potentially devastating lawsuit. Highly recommended!",
+      name: "Carlos Mendoza",
+      role: "Cliente de Derecho Penal",
+      content: "El Dr. Saccone manejó mi caso con extraordinario profesionalismo. Su estrategia y dedicación lograron un resultado que superó mis expectativas.",
       rating: 5
     },
     {
-      name: "Maria Garcia",
-      role: "Personal Injury Client",
-      content: "After my accident, I didn't know where to turn. The attorneys at LawEx fought tirelessly for my rights and secured a settlement that exceeded my expectations.",
-      rating: 5
-    },
-    {
-      name: "David Williams",
-      role: "Criminal Defense Client",
-      content: "I was facing serious charges and felt hopeless. LawEx's criminal defense team built a strong case and got the charges dismissed. They truly care about their clients.",
+      name: "Ana López",
+      role: "Cliente de Familia",
+      content: "Durante mi divorcio, el equipo me brindó un apoyo invaluable. Su empatía y experiencia hicieron toda la diferencia en un momento tan difícil.",
       rating: 5
     }
   ];
@@ -33,19 +27,18 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">
-            Testimonials
+            Testimonios
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
-            What Our Clients Say
+            Lo Que Dicen Nuestros Clientes
           </h2>
           <p className="text-gray-400 text-lg">
-            Don't just take our word for it. Here's what our satisfied clients 
-            have to say about their experience with our firm.
+            La satisfacción de nuestros clientes es nuestra mejor carta de presentación.
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
